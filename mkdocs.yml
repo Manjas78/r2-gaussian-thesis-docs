@@ -1,8 +1,48 @@
-site_name: My MkDocs Material Documentation
-site_url: https://sitename.example
+site_name: R²-Gaussian Thesis Docs
+site_description: CBCT reconstruction experiments using R²-Gaussian
+site_url: https://Manjas78.github.io/r2-gaussian-thesis-docs/
+repo_url: https://github.com/Manjas78/r2-gaussian-thesis-docs
+edit_uri: edit/main/docs/
+
 theme:
   name: material
-  palette:
-    scheme: slate
-    primary: green
-    accent: deep purple
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+# palette:            # keep default (auto light/dark). Uncomment to force a scheme.
+#   - scheme: slate
+
+plugins:
+  - search
+  - include-markdown   # keep only if you actually include external md
+  - macros             # safe to keep; remove if unused
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed:
+      alternate_style: true
+
+# Explicit navigation (files must exist at these paths):
+nav:
+  - Overview: index.md
+  - Install & Setup:
+      - install/install.md
+  - Using R²-Gaussian:
+      - usage/usage.md
+  - Experiments:
+      - experiments/experiments.md
+      - experiments/results.md
+
+
+extra:
+  project:
+    code_repo: "https://github.com/Manjas78/r2-gaussian-thesis"
+    results_path: "../r2-gaussian-thesis/results"

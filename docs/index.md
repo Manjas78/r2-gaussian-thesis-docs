@@ -1,17 +1,31 @@
-# Welcome to MkDocs
+# R²-Gaussian Reconstruction — Thesis Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This documentation accompanies my Bachelor’s thesis on **3D Cone-Beam Computed Tomography (CBCT)** reconstruction using the **R²-Gaussian** algorithm.
 
-## Commands
+The **R²-Gaussian** framework was originally proposed by **Zha et al. (2024)** as a *radiative Gaussian splatting* method for tomographic reconstruction.  
+In this work, the published algorithm and implementation are **adapted, reproduced, and evaluated** on custom CBCT datasets to:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- test its applicability for preclincal mouse data,
+- investigate the influence of hyperparameters such as iteration count, densification thresholds, and total-variation loss,
+- compare reconstruction quality (PSNR/SSIM) and computational performance with traditional filtered backprojection (FDK) and iterative algorithms.
 
-## Project layout
+---
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 📘 Reference
+
+The original algorithm:
+
+> Ruyi Zha, Tao Jun Lin, Yuanhao Cai, Jiwen Cao, Yanhao Zhang, and Hongdong Li.  
+> **R²-Gaussian: Rectifying Radiative Gaussian Splatting for Tomographic Reconstruction.**  
+> *Advances in Neural Information Processing Systems (NeurIPS)*, 2024.  
+> [Paper link (arXiv)](https://arxiv.org/abs/2405.20693)
+
+BibTeX:
+```bibtex
+@inproceedings{r2_gaussian,
+  title     = {R$^2$-Gaussian: Rectifying Radiative Gaussian Splatting for Tomographic Reconstruction},
+  author    = {Ruyi Zha and Tao Jun Lin and Yuanhao Cai and Jiwen Cao and Yanhao Zhang and Hongdong Li},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2024}
+}
+```
