@@ -1,45 +1,77 @@
-site_name: R²-Gaussian Thesis Docs
+site_name: Bachelor Thesis Documentation - Handta
 site_description: CBCT reconstruction experiments using R²-Gaussian
 site_url: https://Manjas78.github.io/r2-gaussian-thesis-docs/
 repo_url: https://github.com/Manjas78/r2-gaussian-thesis-docs
 edit_uri: edit/main/docs/
 
+##################################################################
+# Theme configuration
 theme:
   name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
   features:
     - navigation.tabs
     - navigation.top
     - content.code.copy
-  icon:
-    repo: fontawesome/brands/github
-# palette:            # keep default (auto light/dark). Uncomment to force a scheme.
-#   - scheme: slate
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: teal
+      accent: indigo
 
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: teal
+      accent: indigo
+
+##################################################################
+# Markdown extensions
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+##################################################################
+# Plugins
 plugins:
   - search
   - include-markdown   # keep only if you actually include external md
   - macros             # safe to keep; remove if unused
 
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.tabbed:
-      alternate_style: true
-
+##################################################################
 # Explicit navigation (files must exist at these paths):
 nav:
   - Overview: index.md
-  - Install & Setup:
-      - install/install.md
-  - Using R²-Gaussian:
-      - usage/usage.md
-  - Experiments:
-      - experiments/experiments.md
-      - experiments/results.md
+  - Installation Guide: install/install.md
+  - Running R²-Gaussian: usage/usage.md
+  - Materials & Methods: experiments/experiments.md
+  - Results: experiments/results.md
+  - Conclusion: Conclusion/conclusion.md
+  - References: references.md
 
 
 extra:
