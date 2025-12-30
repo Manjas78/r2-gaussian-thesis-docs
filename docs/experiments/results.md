@@ -55,7 +55,10 @@ However, large **homogeneous regions** in Digimouse caused R²-Gaussian to produ
 ## Preclinical Mouse Data (UKMZ)
 
 ### Rotation-Axis Alignment
+
 A horizontal shift of 5 px (full-angle) and 6 px (limited-angle) maximised reprojection PSNR/SSIM and removed double edges.
+
+![Plot Full Volume Recon](../images/offsetukm.png)
 
 ### Small-Volume Reconstructions (256³)
 
@@ -66,6 +69,10 @@ A horizontal shift of 5 px (full-angle) and 6 px (limited-angle) maximised repro
 - **TV regularisation:** negligible effect on reconstruction quality.
 - **Intensity-matching strategies:** negligible influence.
 
+![Plot Full Volume Recon](../images/ukmz256plot.png)
+
+![Comparision Full Volume Recon](../images/ukm256p75.png)
+
 ### Full-Volume Reconstructions (630³)
 
 Under memory-feasible settings:
@@ -74,9 +81,9 @@ Under memory-feasible settings:
 - FDK dominated moderate and dense sampling.
 - R²-Gaussian saturated at ≈ 37–38 dB PSNR and SSIM ≈ 0.95.
 
-![Plot Full Volume Recon](../images/ukmz256plot.png)
+![Plot Full Volume Recon](../images/ukmz630plot.png)
 
-![Comparision Full Volume Recon](../images/ukm256p75.png)
+![Comparision Full Volume Recon](../images/ukm300.png)
 
 ---
 
