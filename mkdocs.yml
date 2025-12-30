@@ -60,7 +60,7 @@ markdown_extensions:
 plugins:
   - search
   #- include-markdown   # keep only if you actually include external md
-  - macros             # safe to keep; remove if unused
+  #- macros             # safe to keep; remove if unused
 
 ##################################################################
 # Explicit navigation (files must exist at these paths):
