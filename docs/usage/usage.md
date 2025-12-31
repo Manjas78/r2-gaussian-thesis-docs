@@ -10,7 +10,7 @@ Open WSL, then open VS Code, activate environment, and cd into repository.
 Your prompt should look like:
 
 ``` bash
-(r2_gaussian) mbdusr@DESKTOP-M1S49R0:~/r2_gaussian$
+(r2_gaussian) yourusername@DESKTOP-PC:~/r2_gaussian$
 ```
 
 ---
@@ -120,6 +120,7 @@ The authors support:
 - parallel-beam configurations
 
 If you only have volumes, generate projections (their instructions apply).
+
 If you only have X-ray projections, convert to:
 
 - meta_data.json format, or

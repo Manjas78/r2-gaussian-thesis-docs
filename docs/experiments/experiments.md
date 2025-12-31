@@ -14,7 +14,7 @@ Three complementary datasets were used to evaluate **R²-Gaussian** against a cl
 
    ![Molded mouse phantom](../images/mouse_phantom.jpeg)
 
-2. **Synthetic Digimouse atlas**  
+2. **Synthetic Digimouse ATLAS (USC)**  
    Fully segmented digital mouse model converted to a CT-like attenuation volume. Synthetic cone-beam projections were generated with a cone-beam geometry and realistic noise to obtain a ground-truth benchmark.
 
    ![Digimouse volume](../images/dm_views.png)

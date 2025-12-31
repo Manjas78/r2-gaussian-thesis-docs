@@ -34,7 +34,7 @@ In this thesis, the original implementation was **reproduced, adapted, and teste
 
 - reconstruction quality under realistic imaging constraints,
 - the effect of critical hyperparameters, and
-- differences in performance compared to FDK and iterative methods.
+- differences in performance compared to Standard FDK Reconstruction.
 
 ---
 
